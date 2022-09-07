@@ -3,16 +3,46 @@ class Program
 {
     static void Main()
     {
+        ILogger logger = new FileLogger("mylog.txt");
 
-        // Classes e campos(fields)
-        BanckAccount account1 = new BanckAccount("Leonardo", 100);
-        BanckAccount account2 = new BanckAccount("Santos", 100);
+        BanckAccount account1 = new BanckAccount("Leonardo", 100, logger);
+        BanckAccount account2 = new BanckAccount("Santos", 300, logger);
 
-        account1.Deposit(-100);
-        account2.Deposit(150);
+        List<BanckAccount> accounts = new List<BanckAccount>()
+        {
+            account1,
+            account2
+        };
 
-        Console.WriteLine(account1.Balance);
-        Console.WriteLine(account2.Balance);
+        DataStore<string> store = new DataStore<string>();
+        store.Value = "Léo";
+        Console.WriteLine(store.Value);
+
+        // DataStore<int> store = new DataStore<int>();
+        // store.Value = 42;
+        // Console.WriteLine(store.Value);
+
+        // foreach (BanckAccount account in accounts)
+        // {
+        //     Console.WriteLine(account.Balance);
+        // } 
+
+        // accounts.Add(account1);
+        // accounts.Add(account2);      
+        // accounts.Remove(account1);
+
+        // List<int> numbers = new List<int>() { 1, 4, 8, 10 };
+        // foreach (int number in numbers)
+        // {
+        //     Console.WriteLine(number);
+        // }
+
+
+        // account1.Deposit(-100);
+        // account2.Deposit(150);
+
+        // Console.WriteLine(account1.Balance);
+        // Console.WriteLine(account2.Balance);
 
 
         /*
@@ -129,16 +159,52 @@ class Program
 
 } // fim class Program
 
+class DataStore<T>
+{
+    public T Value { get; set; }
+}// class DataStore
+
+
+class FileLogger : ILogger
+{
+    private readonly string filePath;
+
+    public FileLogger(string filePath)
+    {
+        this.filePath = filePath;
+    }
+    public void Log(string message)
+    {
+        File.AppendAllText(filePath, $"{message}{Environment.NewLine}");
+    }
+} // fim class FileLogger
+
+class ConsoleLogger : ILogger
+{
+
+} // fim class ConsoleLogger
+
+
+interface ILogger
+{
+    void Log(string message)
+    {
+        Console.WriteLine($"LOGGER: {message}");
+    }
+} // fim interface ILogger
+
+
 class BanckAccount
 {
     private string name;
+    private readonly ILogger logger;
 
-    public decimal Balance 
-    { 
-        get; private set; 
+    public decimal Balance
+    {
+        get; private set;
     }
 
-    public BanckAccount(string name, decimal balance)
+    public BanckAccount(string name, decimal balance, ILogger logger)
     {
         if (string.IsNullOrWhiteSpace(name))
         {
@@ -152,19 +218,21 @@ class BanckAccount
 
         this.name = name;
         Balance = balance;
+        this.logger = logger;
     }
 
     public void Deposit(decimal amount)
     {
         if (amount <= 0)
         {
+            logger.Log($"Não é possível depositar {amount} na conta de {name}");
             return;
         }
 
         Balance += amount;
     }
 
-}
+}// fim class BanckAccount
 
 /*
     class Test
