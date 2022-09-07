@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Curso_de_CSharp-Para_iniciantes/1.0.0": {
+        "runtime": {
+          "Curso_de_CSharp-Para_iniciantes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Curso_de_CSharp-Para_iniciantes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

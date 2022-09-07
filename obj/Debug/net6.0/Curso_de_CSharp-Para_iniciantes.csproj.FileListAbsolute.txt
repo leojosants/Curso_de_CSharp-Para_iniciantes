@@ -1,0 +1,15 @@
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\bin\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.exe
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\bin\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.deps.json
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\bin\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.runtimeconfig.json
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\bin\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.dll
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\bin\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.pdb
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\obj\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.csproj.AssemblyReference.cache
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\obj\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.GeneratedMSBuildEditorConfig.editorconfig
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\obj\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.AssemblyInfoInputs.cache
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\obj\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.AssemblyInfo.cs
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\obj\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.csproj.CoreCompileInputs.cache
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\obj\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.dll
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\obj\Debug\net6.0\refint\Curso_de_CSharp-Para_iniciantes.dll
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\obj\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.pdb
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\obj\Debug\net6.0\Curso_de_CSharp-Para_iniciantes.genruntimeconfig.cache
+C:\REPOSITORIO_GITHUB_DESKTOP\Curso_de_CSharp-Para_iniciantes\obj\Debug\net6.0\ref\Curso_de_CSharp-Para_iniciantes.dll

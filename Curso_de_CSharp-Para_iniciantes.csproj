@@ -1,3 +1,4 @@
+
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -5,7 +6,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>Curso_de_CSharp_Para_iniciantes</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <!-- <Nullable>enable</Nullable> -->
   </PropertyGroup>
 
 </Project>
